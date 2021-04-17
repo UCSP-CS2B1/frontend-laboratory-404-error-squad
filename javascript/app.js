@@ -33,9 +33,42 @@ function fibonacci(number) {
 
 // Param expression: string containing a mathematical expression
 // Returns an integer value
-function evaluation(expression) {
-	return -1
+function evaluation (result) {
+	var chars = result.split("");
+	var n = [], op = [], index = 0, oplast = true;
+	n[index] = "";
+	for (var c = 0; c < chars.length; c++) {
+	  if (isNaN(parseInt(chars[c])) && chars[c] !== "." && !oplast) {
+      op[index] = chars[c];
+      index++;
+      n[index] = "";
+      oplast = true;
+	  } else {
+      n[index] += chars[c];
+      oplast = false;
+	  }
+	}
+	result = parseFloat(n[0]);
+	for (var o = 0; o < op.length; o++) {
+	  var num = parseFloat(n[o + 1]);
+	  switch (op[o]) {
+      case "+":
+        result = result + num;
+        break;
+      case "-":
+        result = result - num;
+        break;
+      case "*":
+        result = result * num;
+        break;
+      case "/":
+        result = result / num;
+        break;
+	  }
+	}
+	return result;
 }
+
 
 if (typeof process === "object") {
 	module.exports = {

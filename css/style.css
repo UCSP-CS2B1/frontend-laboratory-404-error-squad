@@ -354,6 +354,26 @@ h3 {
 /*--------------------------------------------------------------
 3.1 Header
 --------------------------------------------------------------*/
+#main-header {
+	background: #2d3047;
+	color: white;
+	height: 60px;
+}
+#main-header a {
+	color: white;
+}
+
+#logo-header {
+	float: left;
+	padding-top: 15px;
+	padding-left: 43%;
+	text-decoration: none;
+}
+#logo-header .header-name {
+	display: block;
+	font-weight: 700;
+	font-size: 1.3em;
+}
 /*--------------------------------------------------------------
 3.1 Home Page
 --------------------------------------------------------------*/
