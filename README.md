@@ -9,12 +9,10 @@
 
 **Members:**
 
-- Name and surname (Student ID)
-- Name and surname (Student ID)
-- Name and surname (Student ID)
-- Name and surname (Student ID)
-- Name and surname (Student ID)
-- Bryan Gonzales 
+- José Enrique Vilca Campana, (201-10-48429)
+- Geraldo Mark Romero Guillen, (201-10-48119)
+- Gabriel Santiago Choque Mayta, (201-10-47523)
+- Jean Carlo Gino Condori Gonzales, (201-10-47536)
 
 ---
 
