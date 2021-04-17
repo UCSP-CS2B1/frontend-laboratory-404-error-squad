@@ -14,6 +14,7 @@
 - Name and surname (Student ID)
 - Name and surname (Student ID)
 - Name and surname (Student ID)
+- Bryan Gonzales 
 
 ---
 
