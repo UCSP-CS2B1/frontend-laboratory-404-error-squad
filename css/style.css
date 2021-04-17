@@ -265,6 +265,23 @@ template {
 h1 {
 	color: red;
 }
+/*--------------------------------------------------------------
+2.0 content
+--------------------------------------------------------------*/
+:root {
+	--primary-font-family: ;
+	--secondary-font-family: ;
+	--h1-font-size: ;
+	--h2-font-size: ;
+	--h3-font-size: ;
+	--font-size: ;
+	/* default palette*/
+	--black: #2d3047;
+	--celeste: #93b7be;
+	--yellow: #e0ca3c;
+	--purple: #a799b7;
+	--green: #048a81;
+}
 
 .reel {
 	width: 100%;
@@ -340,4 +357,17 @@ h1 {
 	left: 0;
 	right: 0;
 	bottom: 0;
+}
+
+footer {
+	width: auto;
+	display: flex;
+	justify-content: center;
+}
+.footer__title {
+	font-size: 16px;
+}
+
+.svg-icon--footer {
+	height: 50px;
 }
