@@ -99,52 +99,91 @@ h3 {
 2.0 Layout
 --------------------------------------------------------------*/
 * {
-	box-sizing: border-box;
+	font-family: 'PT Serif', serif;
+	font-weight: 100;
 }
 /*--------------------------------------------------------------
 2.1 Header
 --------------------------------------------------------------*/
-#main-header {
-	background: var(--black);
+
+.title{
+	font-family: 'PT Serif', serif;
 	color: white;
-	height: 60px;
-}
-#main-header a {
-	color: white;
+	position: absolute;
+	font-size: 20px;
+	margin-left: 38%;
+	margin-top: 6px;
+	z-index: 200;
 }
 
-#logo-header {
-	float: left;
-	padding-top: 15px;
-	padding-left: 43%;
-	text-decoration: none;
+.nav__responsive-button-container{
+	position: absolute;
+	color: snow;
+	width: 100%;
+	font-size: 25px;
+	background-color: var(--black);
+	margin-top: -64px;
+	z-index: 100; 
+	
 }
-#logo-header .header-name {
+
+.nav__responsive-button {
+	padding: 6px 20px;
+	text-align: left;
+	width: 100%;
+}
+
+.nav{
+	height:  37px;
+	width: 100%;
+}
+
+
+.nav__responsive-ul {
 	display: block;
-	font-weight: 700;
-	font-size: 1.3em;
+	position: absolute;
+	width: 100%;
+	margin-top: 37px;
+	padding-top: 27px;
+	height: 37px;
 }
 
-#main-header{
-	background: #2D3047;
-	color: white;
-	height: 60px;
+.nav__li-container{
+	position: relative;
+	top: -1000px;
+	height: calc(100vh - 64px);
+	background: #3e4263;
+	transition: all 1s;
+	z-index: 1;
+	width: 75%
+	padding-top: 27px;
 }
-	#main-header a{
-		color: white;
-	}
 
-#logo-header{
-	float: left;
-	padding-top: 15px;
-	padding-left: 43%;
+.nav__responsive-li {
+	width: 100%;
+	padding: 9px 20px
+}
+
+.nav__responsive-li i {
+	box-sizing: border-box;
+	text-align: center;
+	margin-right: 5px;
+	width: 30px;
+	color: snow;
+
+}
+
+.nav__responsive-li a{
+	color: snow;
 	text-decoration: none;
+
 }
-	#logo-header .header-name{
-		display: block;
-		font-weight: 700;
-		font-size: 1.3em;
-	}
+
+.nav__responsive-ul:hover > .nav__li-container {
+	top: -27px;
+}
+
+
 
 /*--------------------------------------------------------------
 2.2 Home Page
