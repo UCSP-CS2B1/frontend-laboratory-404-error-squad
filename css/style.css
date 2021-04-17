@@ -13,6 +13,25 @@ Version: 1.0
 1.0 Normalize
 
 /*--------------------------------------------------------------
+0.0 Variables
+--------------------------------------------------------------*/
+
+:root {
+	--primary-font-family: ;
+	--secondary-font-family: ;
+	--h1-font-size: ;
+	--h2-font-size: ;
+	--h3-font-size: ;
+	--font-size: ;
+	/* default palette*/
+	--black: #2d3047;
+	--celeste: #93b7be;
+	--yellow: #e0ca3c;
+	--pink: #a799b7;
+	--green: #048a81;
+}
+
+/*--------------------------------------------------------------
 1.0 Normalize
 Styles based on Normalize v5.0.0 @link https://github.com/necolas/normalize.css
 --------------------------------------------------------------*/
@@ -262,9 +281,9 @@ template {
 	display: none;
 }
 
-h1 {
-	color: red;
-}
+/*--------------------------------------------------------------
+2.0 content
+--------------------------------------------------------------*/
 
 .reel {
 	width: 100%;
@@ -342,6 +361,7 @@ h1 {
 	bottom: 0;
 }
 
+<<<<<<< HEAD
 #main-header{
 	background: #2D3047;
 	color: white;
@@ -362,3 +382,19 @@ h1 {
 		font-weight: 700;
 		font-size: 1.3em;
 	}
+=======
+footer {
+	width: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.footer__title {
+	font-size: 16px;
+}
+
+.svg-icon--footer {
+	height: 50px;
+	color: var;
+}
+>>>>>>> f42cb54cc101cdf0187a6de539048553e7d7a996
