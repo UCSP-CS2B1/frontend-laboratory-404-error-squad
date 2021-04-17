@@ -2,7 +2,11 @@
 
 /*Place your style sheet content here, you already have Poppins font imported*/
 /*
-Author:	_ , _ , _ , José Enrique Vilca Campana <@marcusmors>
+Authors:
+	* Gabriel Choque Mayta ,
+	* Jean Carlo Condori Gonzales,
+	* Geraldo Mark Romero Guillen ,
+	* José Enrique Vilca Campana <@marcusmors>
 Version: 1.0
 */
 
@@ -11,17 +15,47 @@ Version: 1.0
 ----------------------------------------------------------------
 0.0 Variables
 1.0 Normalize
+2.0 Typography
+3.0 Layout
+	3.1 Header
+	3.2 Home Page
+	3.3 Footer
+
+
+// inspiration
+2.0 Accessibility
+3.0 Alignments
+4.0 Clearings
+5.0 Typography
+6.0 Forms
+7.0 Formatting
+8.0 Lists
+9.0 Tables
+10.0 Links
+11.0 Featured Image Hover
+12.0 Navigation
+13.0 Layout
+	13.1 Header
+	13.2 Home Page
+	13.3 Regular Content
+	13.4 Posts
+	13.5 Pages
+	13.6 Footer
+14.0 Comments
+15.0 Widgets
+16.0 Media
+	16.1 Galleries
+17.0 Customizer
+18.0 SVGs Fallbacks
+19.0 Media Queries
+20.0 Print
+// inspiration
 
 /*--------------------------------------------------------------
 0.0 Variables
 --------------------------------------------------------------*/
 
 :root {
-	--primary-font-family: ;
-	--secondary-font-family: ;
-	--h1-font-size: ;
-	--h2-font-size: ;
-	--h3-font-size: ;
 	--font-size: ;
 	/* default palette*/
 	--black: #2d3047;
@@ -29,6 +63,15 @@ Version: 1.0
 	--yellow: #e0ca3c;
 	--pink: #a799b7;
 	--green: #048a81;
+	/* responsive */
+	/*	mobile*/
+	--mobile-w: 360px;
+	--mobile-h: 640px;
+	/*	tablet*/
+	--tablet-w: 720px;
+	--tablet-h: 1024px;
+	/*	desktop*/
+	/*	idk what to do here*/
 }
 
 /*--------------------------------------------------------------
@@ -282,9 +325,35 @@ template {
 }
 
 /*--------------------------------------------------------------
-2.0 content
+2.0 Typography
 --------------------------------------------------------------*/
-
+html {
+	font-size: 62.5%;
+}
+h1 {
+	font-size: 2.4rem;
+	margin-bottom: 0.6rem;
+	margin-top: 0.4rem;
+}
+h2 {
+	font-size: 1.6rem;
+	margin-bottom: 0.4rem;
+	margin-top: 0.2rem;
+}
+h3 {
+	font-size: 1.4rem;
+	margin-bottom: 0.3rem;
+	margin-top: 0.1rem;
+}
+/*--------------------------------------------------------------
+3.0 Layout
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+3.1 Header
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+3.1 Home Page
+--------------------------------------------------------------*/
 .reel {
 	width: 100%;
 	overflow: scroll;
@@ -292,14 +361,14 @@ template {
 	position: relative;
 }
 
-.reel__container {
+.reel__cont {
 	white-space: nowrap;
 	margin: 70px 0px;
 	padding-bottom: 10px;
 }
 
 .reel-item {
-	background-color: palevioletred;
+	background-color: var(--pink);
 	width: 200px;
 	height: 250px;
 	border-radius: 20px;
@@ -319,11 +388,11 @@ template {
 	transform: translate3d(100px, 0, 0);
 }
 
-.reel__container:hover .reel-item {
+.reel__cont:hover .reel-item {
 	opacity: 0.3;
 }
 
-.reel__container:hover .reel-item:hover {
+.reel__cont:hover .reel-item:hover {
 	-webkit-transform: scale(1.5);
 	transform: scale(1.5);
 	opacity: 1;
@@ -361,17 +430,37 @@ template {
 	bottom: 0;
 }
 
+/*--------------------------------------------------------------
+3.3 Footer
+--------------------------------------------------------------*/
+
 footer {
 	width: auto;
 	display: flex;
 	justify-content: center;
+	background-color: var(--black);
 }
 
-.footer__title {
-	font-size: 16px;
+.footer-cont {
+	width: 80vw;
+	min-width: var(--mobile-w);
+	display: flex;
+	flex-direction: column;
+	/* justify-content: ; */
 }
-
-.svg-icon--footer {
+.footer__u-logo-cont {
+}
+.footer__u-logo {
+	width: 40%;
+}
+.svg-icon,
+#contact-icon {
 	height: 50px;
-	color: var;
+	color: var(--pink);
+}
+.footer__contact-cont {
+}
+.footer__contact-tittle-cont {
+}
+.footer__contact-icons-cont {
 }
