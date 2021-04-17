@@ -348,6 +348,9 @@ h3 {
 /*--------------------------------------------------------------
 3.0 Layout
 --------------------------------------------------------------*/
+* {
+	box-sizing: border-box;
+}
 /*--------------------------------------------------------------
 3.1 Header
 --------------------------------------------------------------*/
@@ -436,6 +439,7 @@ h3 {
 
 footer {
 	width: auto;
+	height: 30vh;
 	display: flex;
 	justify-content: center;
 	background-color: var(--black);
@@ -446,21 +450,44 @@ footer {
 	min-width: var(--mobile-w);
 	display: flex;
 	flex-direction: column;
-	/* justify-content: ; */
+	justify-content: space-around;
 }
 .footer__u-logo-cont {
+	height: auto;
+	max-height: 20vh;
+	padding-top: 4vh;
 }
 .footer__u-logo {
-	width: 40%;
+	display: block;
+	margin: auto;
+	max-height: 13vh;
+	width: 50%;
+}
+.footer__contact-cont {
+	width: 60%;
+	height: 12.5vh;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.footer__contact-tittle-cont {
+	text-align: center;
+	/* color: var(--yellow); */
+	color: white;
+	font-weight: bold;
+}
+.footer__contact-tittle-cont *:hover {
+	color: var(--celeste);
+}
+.footer__contact-icons-cont {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 10px;
 }
 .svg-icon,
 #contact-icon {
-	height: 50px;
+	height: 35px;
 	color: var(--pink);
-}
-.footer__contact-cont {
-}
-.footer__contact-tittle-cont {
-}
-.footer__contact-icons-cont {
 }
