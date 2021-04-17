@@ -26,15 +26,12 @@ function factorial(number) {
 // Returns a single integer
 function fibonacci(number) {
 	//Write your code here
-
 	return -1
 }
 
 // Param expression: string containing a mathematical expression
 // Returns an integer value
 function evaluation(expression) {
-	//Write your code here
-
 	return -1
 }
 
