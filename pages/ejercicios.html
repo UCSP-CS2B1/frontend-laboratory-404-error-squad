@@ -6,8 +6,8 @@
 	<meta name="robots" content="index,follow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Frontend Proyect</title>
-	<link rel="stylesheet" href="/./css/style.css">
 	<link rel="stylesheet" href="/./css/normalize.css">
+	<link rel="stylesheet" href="/./css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/eaadc99044.js" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css2">
@@ -15,11 +15,11 @@
 
 <body>
 	<header>
-		<div class="title">Frontend Proyect</div>	
+		<div class="title">Frontend Proyect</div>
 			<nav class="nav">
 			<ul class="nav__responsive-ul">
-				<div class="nav__responsive-button-container">					
-					<div class="nav__responsive-button fas fa-bars"></div>					
+				<div class="nav__responsive-button-container">
+					<div class="nav__responsive-button fas fa-bars"></div>
 				</div>
 				<div class="nav__li-container">
 					<li class="nav__responsive-li"><i class="fas fa-home"></i><a href="/./../index.html">Inicio</a></li>
@@ -28,5 +28,55 @@
 			</ul>		
 		</nav>
 	</header>
+
+
+	<main>
+		<section class="algorithm">
+			<div class="algorithm_cont">
+				<h2>Insertion sort</h2>
+				<h3>array of numbers</h3>
+				<form id="insertion_sort">
+					<input type="text" name="form-array"><br>
+				</form>
+				<button class="algorithm__button">Insertion Sort</button>
+				<div id="insertion-answer"></div>
+			</div>
+		</section>
+		<section class="algorithm">
+			<div class="algorithm_cont">
+				<h2>Factorial</h2>
+				<h3>Number (between 1 and 6)</h3>
+				<form id="factorial">
+					<input type="text" name="form-array"><br>
+				</form>
+				<button class="algorithm__button">Calculate Factorial</button>
+				<div id="factorial-answer"></div>
+			</div>
+		</section>
+		<section class="algorithm">
+			<div class="algorithm_cont">
+				<h2>Fibonacci</h2>
+				<h3>Array of numbers</h3>
+				<form id="fibonacci">
+					<input type="text" name="form-array"><br>
+				</form>
+				<button class="algorithm__button">Calculate Fibonacci</button>
+				<div id="insertion-answer"></div>
+			</div>
+		</section>
+		<section class="algorithm">
+			<div class="algorithm_cont">
+				<h2>Evaluation</h2>
+				<h3>Write any mathematical expression</h3>
+				<form id="evaluation">
+					<input type="text" name="form-array"><br>
+				</form>
+				<button class="algorithm__button">Evaluate Expression</button>
+				<div id="insertion-answer"></div>
+			</div>
+		</section>
+	</main>
+
+
 </body>
 </html>
