@@ -111,8 +111,9 @@ h3 {
 	color: white;
 	position: absolute;
 	font-size: 20px;
-	margin-left: 38%;
-	margin-top: 6px;
+	margin-left: 43%;
+	margin-right: 5%;
+	margin-top: 9px;
 	z-index: 200;
 }
 
@@ -122,18 +123,19 @@ h3 {
 	width: 100%;
 	font-size: 25px;
 	background-color: var(--black);
-	margin-top: -64px;
+	margin-top: -74px;
+	height: 47px;
 	z-index: 100;
 }
 
 .nav__responsive-button {
-	padding: 6px 20px;
+	padding: 9px 20px;
 	text-align: left;
 	width: 100%;
 }
 
 .nav {
-	height: 37px;
+	height: 47px;
 	width: 100%;
 }
 
@@ -141,25 +143,33 @@ h3 {
 	display: block;
 	position: absolute;
 	width: 100%;
-	margin-top: 37px;
-	padding-top: 27px;
+	margin-top: 57px;
+	padding-top: 17px;
 	height: 37px;
 }
 
 .nav__li-container {
 	position: relative;
 	top: -1000px;
-	height: calc(100vh - 64px);
+	height: calc(26vh - 64px);
 	background: #3e4263;
 	transition: all 1s;
 	z-index: 1;
-	width: 75%;
+	width: 25%;
 	padding-top: 27px;
 }
 
 .nav__responsive-li {
 	width: 100%;
-	padding: 9px 20px;
+	padding: 6px 2px;
+}
+
+.nav__responsive-li:hover > a {
+	color: #bbb;
+}
+
+.nav__responsive-li:hover > i {
+	color: #bbb;
 }
 
 .nav__responsive-li i {
@@ -173,10 +183,39 @@ h3 {
 .nav__responsive-li a {
 	color: snow;
 	text-decoration: none;
+	font-size: 18px;
 }
 
 .nav__responsive-ul:hover > .nav__li-container {
-	top: -27px;
+	top: -37px;
+}
+
+@media only screen and (max-width: 600px) {
+	.nav__responsive-li a {
+		color: snow;
+		text-decoration: none;
+		font-size: 11px;
+	}
+	.nav__li-container {
+		position: relative;
+		top: -1000px;
+		height: calc(20vh - 64px);
+		background: #3e4263;
+		transition: all 1s;
+		z-index: 1;
+		width: 100%;
+		padding-top: 15px;
+	}
+	.title {
+		font-family: "PT Serif", serif;
+		color: white;
+		position: absolute;
+		font-size: 15px;
+		margin-left: 43%;
+		margin-right: 5%;
+		margin-top: 9px;
+		z-index: 200;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -185,6 +224,7 @@ h3 {
 .reel {
 	width: 100%;
 	overflow: scroll;
+	background: #636470;
 	padding: 25px;
 	position: relative;
 }
