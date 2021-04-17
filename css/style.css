@@ -99,15 +99,15 @@ h3 {
 2.0 Layout
 --------------------------------------------------------------*/
 * {
-	font-family: 'PT Serif', serif;
+	font-family: "PT Serif", serif;
 	font-weight: 100;
 }
 /*--------------------------------------------------------------
 2.1 Header
 --------------------------------------------------------------*/
 
-.title{
-	font-family: 'PT Serif', serif;
+.title {
+	font-family: "PT Serif", serif;
 	color: white;
 	position: absolute;
 	font-size: 20px;
@@ -116,15 +116,14 @@ h3 {
 	z-index: 200;
 }
 
-.nav__responsive-button-container{
+.nav__responsive-button-container {
 	position: absolute;
 	color: snow;
 	width: 100%;
 	font-size: 25px;
 	background-color: var(--black);
 	margin-top: -64px;
-	z-index: 100; 
-	
+	z-index: 100;
 }
 
 .nav__responsive-button {
@@ -133,11 +132,10 @@ h3 {
 	width: 100%;
 }
 
-.nav{
-	height:  37px;
+.nav {
+	height: 37px;
 	width: 100%;
 }
-
 
 .nav__responsive-ul {
 	display: block;
@@ -148,20 +146,20 @@ h3 {
 	height: 37px;
 }
 
-.nav__li-container{
+.nav__li-container {
 	position: relative;
 	top: -1000px;
 	height: calc(100vh - 64px);
 	background: #3e4263;
 	transition: all 1s;
 	z-index: 1;
-	width: 75%
+	width: 75%;
 	padding-top: 27px;
 }
 
 .nav__responsive-li {
 	width: 100%;
-	padding: 9px 20px
+	padding: 9px 20px;
 }
 
 .nav__responsive-li i {
@@ -170,20 +168,16 @@ h3 {
 	margin-right: 5px;
 	width: 30px;
 	color: snow;
-
 }
 
-.nav__responsive-li a{
+.nav__responsive-li a {
 	color: snow;
 	text-decoration: none;
-
 }
 
 .nav__responsive-ul:hover > .nav__li-container {
 	top: -27px;
 }
-
-
 
 /*--------------------------------------------------------------
 2.2 Home Page
