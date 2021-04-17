@@ -361,7 +361,6 @@ template {
 	bottom: 0;
 }
 
-<<<<<<< HEAD
 #main-header{
 	background: #2D3047;
 	color: white;
@@ -382,7 +381,6 @@ template {
 		font-weight: 700;
 		font-size: 1.3em;
 	}
-=======
 footer {
 	width: auto;
 	display: flex;
@@ -397,4 +395,3 @@ footer {
 	height: 50px;
 	color: var;
 }
->>>>>>> f42cb54cc101cdf0187a6de539048553e7d7a996
