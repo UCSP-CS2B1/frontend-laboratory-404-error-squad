@@ -9,11 +9,10 @@
 
 **Members:**
 
-- Name and surname (Student ID)
-- Name and surname (Student ID)
-- Name and surname (Student ID)
-- Name and surname (Student ID)
-- Name and surname (Student ID)
+- José Enrique Vilca Campana (Student ID)
+- Geraldo Mark Romero Guillen (Student ID)
+- Gabriel Santiago Choque Mayta (201-10-47523)
+- Jean Carlo Condori Gonzales (Student ID)
 
 ---
 
