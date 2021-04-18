@@ -19,8 +19,7 @@ Version: 1.0
 	3.1 Header
 	3.2 Home Page
 	3.3 Footer
-4.0 Pages
-	4.1 ejercicios.html
+
 
 // inspiration
 2.0 Accessibility
@@ -82,25 +81,24 @@ html {
 }
 h1 {
 	font-size: 2.4rem;
-	padding-bottom: 1.4rem;
-	padding-top: 0.6rem;
+	margin-bottom: 0.6rem;
+	margin-top: 0.4rem;
 }
 h2 {
 	font-size: 1.6rem;
-	padding-bottom: 1rem;
-	padding-top: 0.4rem;
+	margin-bottom: 0.4rem;
+	margin-top: 0.2rem;
 }
 h3 {
 	font-size: 1.4rem;
-	padding-bottom: 0.8rem;
-	padding-top: 0.3rem;
+	margin-bottom: 0.3rem;
+	margin-top: 0.1rem;
 }
 /*--------------------------------------------------------------
 2.0 Layout
 --------------------------------------------------------------*/
 * {
-	font-family: "poppins";
-	/* font-family: "PT Serif", serif; */
+	font-family: "PT Serif", serif;
 	font-weight: 100;
 }
 body {
@@ -114,6 +112,7 @@ body {
 2.1 Header
 --------------------------------------------------------------*/
 .title {
+	font-family: "PT Serif", serif;
 	color: white;
 	position: absolute;
 	font-size: 20px;
@@ -310,8 +309,8 @@ body {
 --------------------------------------------------------------*/
 
 footer {
+	/* margin-top: auto; */
 	width: auto;
-	min-width: var(--mobile-w);
 	height: 15vh;
 	min-height: 96px;
 	background-color: var(--black);
@@ -319,7 +318,7 @@ footer {
 
 .footer-cont {
 	height: 15vh;
-	width: 80%;
+	width: 80vw;
 	min-width: var(--mobile-w);
 	margin-left: auto;
 	margin-right: auto;
@@ -327,7 +326,6 @@ footer {
 	justify-content: space-around;
 	align-items: center;
 }
-
 .footer__contact-cont {
 	width: 60%;
 	max-height: 10vh;
@@ -335,8 +333,8 @@ footer {
 	flex-direction: column;
 	justify-content: space-around;
 }
-
 .footer__contact-tittle-cont {
+	height: 10rem;
 	color: white;
 	font-weight: bold;
 	display: flex;
@@ -370,10 +368,7 @@ footer {
 	/* width: 50%; */
 }
 /*--------------------------------------------------------------
-4.0 pages
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-4.1 ejercicios
+3 ejercicios.html
 --------------------------------------------------------------*/
 
 .main-flex-container {
@@ -393,3 +388,4 @@ footer {
 	flex-grow: 1;
 	text-align: center;
 }
+
