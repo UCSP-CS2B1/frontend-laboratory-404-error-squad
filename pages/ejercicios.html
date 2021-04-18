@@ -13,6 +13,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/eaadc99044.js" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css2">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- <script type="javascript" src="./scripts.js"></script> -->
 </head>
 
 <body>
@@ -20,8 +22,8 @@
 	<header>
 		<div class="title">Frontend Proyect</div>
 			<nav class="nav">
-			<ul class="nav__responsive-ul">
-				<div class="nav__responsive-button-container">
+				<ul class="nav__responsive-ul">
+					<div class="nav__responsive-button-container">
 					<div class="nav__responsive-button fas fa-bars"></div>
 				</div>
 				<div class="nav__li-container">
@@ -39,14 +41,20 @@
                 <div class="title-1">Insertion sort</div>
                 <div class="title-2">Array of numbers</div>
                 <form class="form" id="insertion-sort-form">
-                    <div class="form__section">
-                        <input type="text" name="numbers" class="form__input" placeholder="comma separated">
+									<div class="form__section">
+											<label id="insertion-sort-field">
+												<input type="text" name="numbers" class="form__input" id="insertion-sort-input" placeholder="comma separated" id="insertion-sort-input">
+											</label>
                     </div>
                     <div class="form__section">
-                        <input type="submit" onclick="do_insertion_sort()" class="form__submit" value="comma separated numbers">
+											<!-- <input type="submit" name="insertion_submit" class="form__submit" value="comma separated numbers" form="insertion-sort-form"> -->
+											<button class="form__submit" id="btn-insertion-sort"></button>
                     </div>
                     <div class="form__section">
-                        <input type="text" name="insertion-sort__output" readonly="" class="form__result">
+											<div class="form__result" id="insertion-sort-output"></div>
+											<!-- <label id="insertion-sort-output">
+                        <input type="text" name="insertion__output" readonly="" class="form__result">
+											</label> -->
                     </div>
                 </form>
             </div>
@@ -55,14 +63,16 @@
                 <div class="title-2">Number (between 1 and 6)</div>
                 <form class="form" id="factorial-form">
                     <div class="form__section">
-                        <input type="text" name="number" class="form__input" placeholder="Number">
+                        <input id="factorial-input"type="number" name="number_0" class="form__input" placeholder="Number">
                     </div>
                     <div class="form__section">
-                        <input type="submit" class="form__submit" onclick="do_factorial()"  value="calculate Factorial">
+                        <!-- <input type="button" class="form__submit" onclick="do_factorial()" value="calculate Factorial"> -->
+												<button class="form__submit"id="btn-factorial"></button>
                     </div>
-                    <div class="form__section">
+										<div class="form__result" id="factorial-output"></div>
+                    <!-- <div class="form__section">
                         <input type="text" name="factorial__output" readonly="" class="form__result">
-                    </div>
+                    </div> -->
                 </form>
             </div>
             <div class="flex-container">
@@ -70,14 +80,16 @@
                 <div class="title-2">Choose a Number</div>
                 <form class="form" id="fibonacci-form">
                     <div class="form__section">
-                        <input type="text" name="number" class="form__input" placeholder="Number">
+                        <input id="fibonacci-input"type="number" name="number_1" class="form__input" placeholder="Number">
                     </div>
                     <div class="form__section">
-                        <input type="submit" onclick="do_fibonacci()" class="form__submit" value="Calculate Fibonacci">
+                        <!-- <input type="submit" onclick="do_fibonacci()" class="form__submit" value="Calculate Fibonacci"> -->
+												<button class="form__submit"id="btn-fibonacci"></button>
                     </div>
-                    <div class="form__section">
+										<div class="form__result" id="fibonacci-output"></div>
+                    <!-- <div class="form__section">
                         <input type="text" name="fibonacci__output" readonly="" class="form__result">
-                    </div>
+                    </div> -->
                 </form>
             </div>
             <div class="flex-container">
@@ -85,14 +97,16 @@
                 <div class="title-2">Write any mathematical expression</div>
                 <form class="form" id="evaluation-form">
                     <div class="form__section">
-                        <input type="text" name="expression" class="form__input" placeholder="2 + 3 * 5 - 100">
+                        <input type="text" id="expression-input" name="expression" class="form__input" placeholder="2 + 3 * 5 - 100">
                     </div>
                     <div class="form__section">
-                        <input type="submit" onclick="do_evaluation()" class="form__submit" value="Evaluate Expression">
+                        <!-- <input type="submit" class="form__submit" value="Evaluate Expression"> -->
+												<button class="form__submit"id="btn-expression"></button>
                     </div>
-                    <div class="form__section">
+										<div class="form__result" id="expression-output"></div>
+                    <!-- <div class="form__section">
                         <input type="text" name="evaluation__output" readonly="" class="form__result">
-                    </div>
+                    </div> -->
                 </form>
             </div>
         </div>
@@ -118,7 +132,7 @@
 		</div>
 	</footer>
 
-<script src="/./javascript/scripts.js"></script>
+	<script type="module" src="/../javascript/scripts.js"></script>
 
 </body>
 </html>
