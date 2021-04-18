@@ -99,7 +99,8 @@ h3 {
 2.0 Layout
 --------------------------------------------------------------*/
 * {
-	font-family: "PT Serif", serif;
+	font-family: "poppins";
+	/* font-family: "PT Serif", serif; */
 	font-weight: 100;
 }
 body {
@@ -113,7 +114,6 @@ body {
 2.1 Header
 --------------------------------------------------------------*/
 .title {
-	font-family: "PT Serif", serif;
 	color: white;
 	position: absolute;
 	font-size: 20px;
