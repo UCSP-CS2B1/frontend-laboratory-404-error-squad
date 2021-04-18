@@ -1,11 +1,11 @@
 const algorithms = require('./app')
 
 test("Insertion", () => {
-    expect(algorithms.insertion_sort([5,4,3,2,1])).toEqual([1,2,3,4,5]);
+    expect(algorithms.insertion_sort([5, 4, 3, 2, 1])).toEqual([1, 2, 3, 4, 5]);
     expect(algorithms.insertion_sort([])).toEqual([]);
-    expect(algorithms.insertion_sort([10,-10,5,2])).toEqual([-10,2,5,10]);
+    expect(algorithms.insertion_sort([10, -10, 5, 2])).toEqual([-10, 2, 5, 10]);
     expect(algorithms.insertion_sort([5])).toEqual([5]);
-    expect(algorithms.insertion_sort([5,3,1,3,10,20])).toEqual([1,3,3,5,10,20]);
+    expect(algorithms.insertion_sort([5, 3, 1, 3, 10, 20])).toEqual([1, 3, 3, 5, 10, 20]);
 });
 
 test("Factorial", () => {
