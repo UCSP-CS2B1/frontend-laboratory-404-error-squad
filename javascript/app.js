@@ -11,6 +11,7 @@ function insertion_sort(numbers) {
 		}
 		inputArr[j + 1] = current
 	}
+	console.log(numbers)
 	return numbers
 }
 
@@ -21,54 +22,61 @@ function factorial(number) {
 	for (i = 1; i <= number; i++) {
 		mult = mult * i
 	}
+	console.log(mult)
 	return mult
 }
 
 // Param number: single integer
 // Returns a single integer
 function fibonacci(number) {
-	if (number < 2) return number
+	if (number < 2) {
+		console.log("executed")
+		return number
+	}
 	return fibonacci(number - 1) + fibonacci(number - 2)
 }
 
 // Param expression: string containing a mathematical expression
 // Returns an integer value
-function evaluation (result) {
-	var chars = result.split("");
-	var n = [], op = [], index = 0, oplast = true;
-	n[index] = "";
+function evaluation(result) {
+	var chars = result.split("")
+	var n = [],
+		op = [],
+		index = 0,
+		oplast = true
+	n[index] = ""
 	for (var c = 0; c < chars.length; c++) {
-	  if (isNaN(parseInt(chars[c])) && chars[c] !== "." && !oplast) {
-      op[index] = chars[c];
-      index++;
-      n[index] = "";
-      oplast = true;
-	  } else {
-      n[index] += chars[c];
-      oplast = false;
-	  }
+		if (isNaN(parseInt(chars[c])) && chars[c] !== "." && !oplast) {
+			op[index] = chars[c]
+			index++
+			n[index] = ""
+			oplast = true
+		} else {
+			n[index] += chars[c]
+			oplast = false
+		}
 	}
-	result = parseFloat(n[0]);
+	result = parseFloat(n[0])
 	for (var o = 0; o < op.length; o++) {
-	  var num = parseFloat(n[o + 1]);
-	  switch (op[o]) {
-      case "+":
-        result = result + num;
-        break;
-      case "-":
-        result = result - num;
-        break;
-      case "*":
-        result = result * num;
-        break;
-      case "/":
-        result = result / num;
-        break;
-	  }
+		var num = parseFloat(n[o + 1])
+		switch (op[o]) {
+			case "+":
+				result = result + num
+				break
+			case "-":
+				result = result - num
+				break
+			case "*":
+				result = result * num
+				break
+			case "/":
+				result = result / num
+				break
+		}
 	}
-	return result;
+	console.log("")
+	return result
 }
-
 
 if (typeof process === "object") {
 	module.exports = {
@@ -77,4 +85,10 @@ if (typeof process === "object") {
 		fibonacci,
 		evaluation,
 	}
+}
+module.exports = {
+	insertion_sort,
+	factorial,
+	fibonacci,
+	evaluation,
 }
