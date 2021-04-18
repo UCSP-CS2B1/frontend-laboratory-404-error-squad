@@ -8,12 +8,15 @@
 	<title>Frontend Proyect</title>
 	<link rel="stylesheet" href="/./css/normalize.css">
 	<link rel="stylesheet" href="/./css/style.css">
+	<link rel="stylesheet" media="(min-width: 720px)" href="/./css/tablet.css">
+	<link rel="stylesheet" media="(min-width: 1024px)" href="/./css/desktop.css">
 	<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/eaadc99044.js" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css2">
 </head>
 
 <body>
+
 	<header>
 		<div class="title">Frontend Proyect</div>
 			<nav class="nav">
@@ -24,8 +27,8 @@
 				<div class="nav__li-container">
 					<li class="nav__responsive-li"><i class="fas fa-home"></i><a href="/./../index.html">Inicio</a></li>
 					<li class="nav__responsive-li"><i class="fas fa-calculator"></i><a href="/./pages/ejercicios.html">Operaciones</a></li>
-				</div>				
-			</ul>		
+				</div>
+			</ul>
 		</nav>
 	</header>
 
@@ -33,14 +36,14 @@
 	<main>
         <div class="main-flex-container">
             <div class="flex-container">
-                <div class="title-1">Insertion sort</div>                
+                <div class="title-1">Insertion sort</div>
                 <div class="title-2">array of numbers</div>
                 <form class="form">
                     <div class="form__section">
                         <input type="text" class="form__input">
                     </div>
                     <div class="form__section">
-                        <input type="submit" class="form__input">				
+                        <input type="submit" class="form__input">
                     </div>
                     <div class="form__section">
                         <input type="text" readonly="" class="form__input">
@@ -48,14 +51,14 @@
                 </form>
             </div>
             <div class="flex-container">
-                <div class="title-1">Factorial</div>                
+                <div class="title-1">Factorial</div>
                 <div class="title-2">Number (between 1 and 6)</div>
                 <form class="form">
                     <div class="form__section">
                         <input type="text" class="form__input">
                     </div>
                     <div class="form__section">
-                        <input type="submit" class="form__input">				
+                        <input type="submit" class="form__input">
                     </div>
                     <div class="form__section">
                         <input type="text" readonly="" class="form__input">
@@ -63,14 +66,14 @@
                 </form>
             </div>
             <div class="flex-container">
-                <div class="title-1">Fibonacci</div>                
+                <div class="title-1">Fibonacci</div>
                 <div class="title-2">Array of numbers</div>
                 <form class="form">
                     <div class="form__section">
                         <input type="text" class="form__input">
                     </div>
                     <div class="form__section">
-                        <input type="submit" class="form__input">				
+                        <input type="submit" class="form__input">
                     </div>
                     <div class="form__section">
                         <input type="text" readonly="" class="form__input">
@@ -78,23 +81,42 @@
                 </form>
             </div>
             <div class="flex-container">
-                <div class="title-1">Evaluation</div>                
+                <div class="title-1">Evaluation</div>
                 <div class="title-2">Write any mathematical expression</div>
                 <form class="form">
                     <div class="form__section">
                         <input type="text" class="form__input">
                     </div>
                     <div class="form__section">
-                        <input type="submit" class="form__input">				
+                        <input type="submit" class="form__input">
                     </div>
                     <div class="form__section">
                         <input type="text" readonly="" class="form__input">
                     </div>
                 </form>
             </div>
-        </div>		
+        </div>
 	</main>
 
+
+	<footer>
+		<div class="footer-cont">
+			<div class="footer__contact-cont">
+				<div class="footer__contact-tittle-cont">
+					<h3>Made by UCSP students</h3>
+				</div>
+				<div class="footer__contact-icons-cont">
+					<img class="svg-icon" id="contact-icon" src="../css/images/github.svg"></img>
+					<img class="svg-icon" id="contact-icon" src="../css/images/facebook.svg"></img>
+					<img class="svg-icon" id="contact-icon" src="../css/images/twitter.svg"></img>
+					<img class="svg-icon" id="contact-icon" src="../css/images/instagram.svg"></img>
+				</div>
+			</div>
+			<div class="footer__u-logo-cont">
+				<img class="footer__u-logo" src="../css/images/ucsp-white.png" alt="escudo de la universidad San Pablo">
+			</div>
+		</div>
+	</footer>
 
 </body>
 </html>
