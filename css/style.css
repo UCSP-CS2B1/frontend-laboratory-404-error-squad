@@ -57,11 +57,11 @@ Version: 1.0
 :root {
 	--font-size: ;
 	/* default palette*/
-	--black: #2d3047;
-	--celeste: #93b7be;
-	--yellow: #e0ca3c;
-	--pink: #a799b7;
-	--green: #048a81;
+	--dark-5-brown: #152431;
+	--dark-4-brown: #224353;
+	--cafe: #346e80;
+	--pink-mate: #4da6b4;
+	--piel: #73ebee;
 	/* responsive */
 	/*	mobile*/
 	--mobile-w: 360px;
@@ -127,7 +127,7 @@ body {
 	color: snow;
 	width: 100%;
 	font-size: 25px;
-	background-color: var(--black);
+	background-color: var(--dark-5-brown);
 	margin-top: -74px;
 	height: 70px;
 	z-index: 100;
@@ -157,11 +157,11 @@ body {
 	position: relative;
 	top: -1000px;
 	height: calc(26vh - 64px);
-	background: #67adfa;
+	background: var(--cafe);
 	transition: all 1s;
 	z-index: 1;
 	width: 25%;
-	padding-top: 40px;
+	padding-top: 30px;
 }
 
 .nav__responsive-li {
@@ -192,7 +192,7 @@ body {
 }
 
 .nav__responsive-ul:hover > .nav__li-container {
-	top: -37px;
+	top: -17px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -205,7 +205,7 @@ body {
 		position: relative;
 		top: -1000px;
 		height: calc(20vh - 64px);
-		background: #67adfa;
+		background:var(--cafe);
 		transition: all 1s;
 		z-index: 1;
 		width: 100%;
@@ -215,6 +215,7 @@ body {
 		font-family: "PT Serif", serif;
 		color: white;
 		position: absolute;
+		padding-top: 7px;
 		font-size: 15px;
 		margin-left: 43%;
 		margin-right: 5%;
@@ -242,7 +243,7 @@ body {
 }
 
 .reel-item {
-	background-color: var(--pink);
+	background-color: var(--pink-mate);
 	width: 200px;
 	height: 250px;
 	border-radius: 20px;
@@ -313,7 +314,7 @@ footer {
 	width: auto;
 	height: 15vh;
 	min-height: 96px;
-	background-color: var(--black);
+	background-color: var(--dark-5-brown);
 	margin-top: auto;
 }
 
@@ -343,7 +344,7 @@ footer {
 	justify-content: center;
 }
 .footer__contact-tittle-cont *:hover {
-	color: var(--celeste);
+	color: var(--pink-mate);
 }
 .footer__contact-icons-cont {
 	padding-left: 15px;
@@ -356,7 +357,7 @@ footer {
 #contact-icon {
 	height: 1vh;
 	min-height: 30px;
-	color: var(--pink);
+	color: var(--pink-mate);
 }
 .footer__u-logo-cont {
 	height: auto;
@@ -372,7 +373,7 @@ footer {
 3 ejercicios.html
 --------------------------------------------------------------*/
 main {
-	background-color: lightgray;
+	background-color: var(--dark-4-brown);
 	align-items: flex-start;
 	padding: 0;
 	margin: 0;
@@ -389,7 +390,7 @@ main {
 }
 
 .flex-container {
-	background-color: steelblue;
+	background-color: var(--pink-mate);
 	border-radius: 2em;
 	padding: 30px;
 	margin: 40px;
@@ -400,13 +401,13 @@ main {
 }
 
 .title-1 {
-	font-family: "poppins";
+	font-family: 'Patrick Hand', cursive;
     font-weight: 100;
 	font-size: 22px;	
 }
 
 .title-2 {
-	font-family: "poppins";
+	font-family: 'Patrick Hand', cursive;
     font-weight: 100;
 	text-align: left;
 	font-size: 15px;
@@ -423,14 +424,15 @@ main {
 }
 
 .form__submit {
+	font-family: 'Patrick Hand', cursive;
 	width: 100%;
 	padding: 10px;
 	margin: 3px 0;
 	border: none;
 	border-radius:1em;
-	font-size: 13px;
-	background-color: teal;
-	color: snow;
+	font-size: 18px;
+	background-color: var(--piel);
+	color: var(--dark-5-brown);
 }
 
 .form__result {
