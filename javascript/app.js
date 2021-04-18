@@ -38,43 +38,41 @@ function fibonacci(number) {
 // Param expression: string containing a mathematical expression
 // Returns an integer value
 function evaluation(result) {
-	let size = result.size()
-	for(let i = 0; i < result.size())
-	// let chars = result.split("")
-	// let n = []
-	// let op = []
-	// let index = 0
-	// let oplast = true
-	// n[index] = ""
-	// for (let i = 0; i < chars.length; i++) {
-	// 	if (isNaN(parseInt(chars[i])) && chars[i] !== "." && !oplast) {
-	// 		op[index] = chars[i]
-	// 		index++
-	// 		n[index] = ""
-	// 		oplast = true
-	// 	} else {
-	// 		n[index] += chars[i]
-	// 		oplast = false
-	// 	}
-	// }
-	// result = parseFloat(n[0])
-	// for (let o = 0; o < op.length; o++) {
-	// 	let num = parseFloat(n[o + 1])
-	// 	switch (op[o]) {
-	// 		case "+":
-	// 			result = result + num
-	// 			break
-	// 		case "-":
-	// 			result = result - num
-	// 			break
-	// 		case "*":
-	// 			result = result * num
-	// 			break
-	// 		case "/":
-	// 			result = result / num
-	// 			break
-	// 	}
-	// }
+	let chars = result.split("")
+	let n = []
+	let op = []
+	let index = 0
+	let oplast = true
+	n[index] = ""
+	for (let i = 0; i < chars.length; i++) {
+		if (isNaN(parseInt(chars[i])) && chars[i] !== "." && !oplast) {
+			op[index] = chars[i]
+			index++
+			n[index] = ""
+			oplast = true
+		} else {
+			n[index] += chars[i]
+			oplast = false
+		}
+	}
+	result = parseFloat(n[0])
+	for (let o = 0; o < op.length; o++) {
+		let num = parseFloat(n[o + 1])
+		switch (op[o]) {
+			case "+":
+				result = result + num
+				break
+			case "-":
+				result = result - num
+				break
+			case "*":
+				result = result * num
+				break
+			case "/":
+				result = result / num
+				break
+		}
+	}
 	console.log("")
 	return result
 }
