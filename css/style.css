@@ -19,7 +19,8 @@ Version: 1.0
 	3.1 Header
 	3.2 Home Page
 	3.3 Footer
-
+4.0 Pages
+	4.1 ejercicios.html
 
 // inspiration
 2.0 Accessibility
@@ -81,24 +82,25 @@ html {
 }
 h1 {
 	font-size: 2.4rem;
-	margin-bottom: 0.6rem;
-	margin-top: 0.4rem;
+	padding-bottom: 1.4rem;
+	padding-top: 0.6rem;
 }
 h2 {
 	font-size: 1.6rem;
-	margin-bottom: 0.4rem;
-	margin-top: 0.2rem;
+	padding-bottom: 1rem;
+	padding-top: 0.4rem;
 }
 h3 {
 	font-size: 1.4rem;
-	margin-bottom: 0.3rem;
-	margin-top: 0.1rem;
+	padding-bottom: 0.8rem;
+	padding-top: 0.3rem;
 }
 /*--------------------------------------------------------------
 2.0 Layout
 --------------------------------------------------------------*/
 * {
-	font-family: "PT Serif", serif;
+	font-family: "poppins";
+	/* font-family: "PT Serif", serif; */
 	font-weight: 100;
 }
 body {
@@ -112,7 +114,6 @@ body {
 2.1 Header
 --------------------------------------------------------------*/
 .title {
-	font-family: "PT Serif", serif;
 	color: white;
 	position: absolute;
 	font-size: 20px;
@@ -309,8 +310,8 @@ body {
 --------------------------------------------------------------*/
 
 footer {
-	/* margin-top: auto; */
 	width: auto;
+	min-width: var(--mobile-w);
 	height: 15vh;
 	min-height: 96px;
 	background-color: var(--black);
@@ -318,7 +319,7 @@ footer {
 
 .footer-cont {
 	height: 15vh;
-	width: 80vw;
+	width: 80%;
 	min-width: var(--mobile-w);
 	margin-left: auto;
 	margin-right: auto;
@@ -326,6 +327,7 @@ footer {
 	justify-content: space-around;
 	align-items: center;
 }
+
 .footer__contact-cont {
 	width: 60%;
 	max-height: 10vh;
@@ -333,8 +335,8 @@ footer {
 	flex-direction: column;
 	justify-content: space-around;
 }
+
 .footer__contact-tittle-cont {
-	height: 10rem;
 	color: white;
 	font-weight: bold;
 	display: flex;
@@ -368,7 +370,10 @@ footer {
 	/* width: 50%; */
 }
 /*--------------------------------------------------------------
-3 ejercicios.html
+4.0 pages
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+4.1 ejercicios
 --------------------------------------------------------------*/
 
 .main-flex-container {
@@ -379,7 +384,11 @@ footer {
 	align-items: flex-start;
 }
 
+<<<<<<< HEAD
 .flex-container{
+=======
+.flex-container {
+>>>>>>> 63db9de1011c05d5a6f4f4baf47065487d58558c
 	background-color: steelblue;
 	padding: 30px;
 	margin: 10px;
