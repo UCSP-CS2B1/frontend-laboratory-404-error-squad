@@ -120,7 +120,7 @@ body {
 .title h1 {
 	font-family: 'Patrick Hand', cursive;
 	font-size: 30px;
-	padding-top: 5px;
+	padding-top: 10px;
 	color: white;
 }
 
@@ -134,7 +134,7 @@ header{
 .nav-container {
 	position: absolute;
   	width: 15%;
-  	height: 100%;
+  	height: 100px;
   	background: var(--dark-5-brown);
   	left: -15%;
   	transition: all 500ms linear;
@@ -147,12 +147,16 @@ header{
 .nav-container.active{
 	height: 100%;
 }
+body {
+	background-color: var(--dark-5-brown);
+}
 
 
 #all.active {
 	width: 85%;
 	margin-left: 15%;
 	transition: all 500ms linear;
+	background-color: var(--dark-4-brown);
 }
 
 .nav-container__li {
@@ -187,6 +191,7 @@ header{
 }
 
 .button-container__button {
+	padding-top: 9px;
 	display: block;
 	width: 40px;
 	text-align: center;
@@ -213,6 +218,7 @@ header{
 	margin: 0;
 	white-space: nowrap;
 	margin: 50px 0px;
+	margin-top: 0;
 }
 
 .reel-item {
