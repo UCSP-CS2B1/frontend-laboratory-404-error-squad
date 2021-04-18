@@ -102,11 +102,11 @@ h3 {
 	font-weight: 100;
 }
 body {
-	height: 100vh;
+	/*height: 100vh;*/
 	min-height: var(--mobile-h);
 	display: flex;
 	flex-flow: column;
-	justify-content: space-between;
+	
 }
 /*--------------------------------------------------------------
 2.1 Header
@@ -157,7 +157,7 @@ body {
 	position: relative;
 	top: -1000px;
 	height: calc(26vh - 64px);
-	background: #3e4263;
+	background: #67ADFA;
 	transition: all 1s;
 	z-index: 1;
 	width: 25%;
@@ -205,7 +205,7 @@ body {
 		position: relative;
 		top: -1000px;
 		height: calc(20vh - 64px);
-		background: #3e4263;
+		background: #67ADFA;
 		transition: all 1s;
 		z-index: 1;
 		width: 100%;
@@ -314,6 +314,7 @@ footer {
 	height: 15vh;
 	min-height: 96px;
 	background-color: var(--black);
+	margin-top: auto;
 }
 
 .footer-cont {
@@ -370,19 +371,27 @@ footer {
 /*--------------------------------------------------------------
 3 ejercicios.html
 --------------------------------------------------------------*/
-
+main {
+	background-color: lightgray;
+	align-items: flex-start;
+	padding: 0;
+	margin: 0;
+	min-height: 80vh;
+	justify-content: space-between;
+}
 .main-flex-container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
-	height: 100vh;
-	align-items: flex-start;
+	justify-content: space-between;
+	align-items: space-between;
+	height: 80vh;
 }
 
 .flex-container {
 	background-color: steelblue;
+	border-radius: 2em;
 	padding: 30px;
-	margin: 10px;
+	margin: 40px;
 	width: 40%;
 	height: 200px;
 	flex-grow: 1;
