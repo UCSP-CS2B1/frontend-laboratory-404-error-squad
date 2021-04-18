@@ -415,12 +415,13 @@ main {
 }
 
 .form__input {
-	width: 100%;
 	padding: 10px;
+	width: 100%;
 	margin: 4px 0;
 	border: none;
 	border-radius:1em;
 	border: 3px solid var(--black);
+	outline: none;
 }
 
 .form__submit {
