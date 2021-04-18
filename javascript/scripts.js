@@ -1,29 +1,13 @@
 //Place your javascript code related with HTML and CSS here
-const {insertion_sort, factorial, fibonacci, evaluation} = require("app.js")
 
-function do_insertion_sort() {
-    document.getElementById("insertion-sort-form").submit()
-    insertion_sort(numbers.split(","))
-}
+//nav
 
-function do_fibonacci() {
-    document.getElementById("fibonacci-form").submit()
-    fibonacci(+number)
-}
+const button = document.querySelector('.button-container');
 
-function do_factorial() {
-    document.getElementById("factorial-form").submit()
-    factorial(+number)
-}
-
-function do_evaluation() {
-    document.getElementById("evaluation-form").submit()
-    evaluation(expression)
-}
-
-module.exports = {
-    do_insertion_sort,
-    do_fibonacci,
-    do_factorial,
-    do_evaluation,
-}
+button.addEventListener('click',function(){
+    console.log('clik')
+    document.getElementById('sidebar').classList.toggle('active');
+    document.getElementById('all').classList.toggle('active');
+    console.log(document.getElementById('sidebar'))
+    console.log(document.getElementById('all'))
+});

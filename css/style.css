@@ -112,118 +112,91 @@ body {
 2.1 Header
 --------------------------------------------------------------*/
 .title {
+	width: 90%;
+	float: right;
+	height: 100%;
+}
+
+.title h1 {
 	font-family: 'Patrick Hand', cursive;
+	font-size: 30px;
+	padding-top: 5px;
 	color: white;
-	position: absolute;
-	font-size: 20px;
-	margin-left: 43%;
-	margin-right: 5%;
-	margin-top: 11px;
-	z-index: 200;
 }
 
-.nav__responsive-button-container {
-	position: absolute;
-	color: snow;
-	width: 100%;
-	font-size: 25px;
-	background-color: var(--dark-5-brown);
-	margin-top: -74px;
+header{
 	height: 70px;
-	z-index: 100;
-}
-
-.nav__responsive-button {
-	padding: 32px 20px;
-	text-align: left;
 	width: 100%;
-}
-
-.nav {
-	font-family: 'Patrick Hand', cursive;
-	height: 50px;
-	width: 100%;
-}
-
-.nav__responsive-ul {
-	display: block;
-	position: absolute;
-	width: 100%;
-	padding: auto;
-	margin-top: 55px;
-	height: 0;
-}
-
-.nav__li-container {
-	position: relative;
-	top: -1000px;
-	height: calc(24vh - 64px);
-	background: var(--cafe);
-	transition: all 1s;
-	z-index: 1;
-	width: 14%;
-	padding-top: 30px;
-}
-
-.nav__responsive-li {
-	width: 100%;
-	padding: 6px 2px;
-}
-
-.nav__responsive-li:hover > a {
-	color: #bbb;
-}
-
-.nav__responsive-li:hover > i {
-	color: #bbb;
-}
-
-.nav__responsive-li i {
-	box-sizing: border-box;
+	background: var(--dark-5-brown);
 	text-align: center;
-	margin-right: 5px;
-	width: 33px;
-	color: snow;
 }
 
-.nav__responsive-li a {
-	color: snow;
+.nav-container {
+	position: absolute;
+  	width: 15%;
+  	height: 100%;
+  	background: var(--dark-5-brown);
+  	left: -15%;
+  	transition: all 500ms linear;
+}
+
+#sidebar.active {
+	left: 0px;
+}
+
+.nav-container.active{
+	height: 100%;
+}
+
+
+#all.active {
+	width: 85%;
+	margin-left: 15%;
+	transition: all 500ms linear;
+}
+
+.nav-container__li {
+	list-style: none;
+	font-family: 'Patrick Hand', cursive;
+  	padding: 20px 10px;
+  	text-align: center;
+  	font-size: 20px;
+}
+
+.nav-container__li a {
 	text-decoration: none;
-	font-size: 18px;
+	color: white;
+	text-align: left;
 }
 
-.nav__responsive-ul:hover > .nav__li-container {
-	top: -17px;
+.nav-container__li i {
+	margin: 6px;
+	color: white;
+	text-align: left;
 }
 
-@media only screen and (max-width: 600px) {
-	.nav__responsive-li a {
-		color: snow;
-		text-decoration: none;
-		font-size: 11px;
-	}
-	.nav__li-container {
-		position: relative;
-		top: -1000px;
-		height: calc(20vh - 64px);
-		background:var(--cafe);
-		transition: all 1s;
-		z-index: 1;
-		width: 100%;
-		padding-top: 15px;
-	}
-	.title {
-		font-family: "PT Serif", serif;
-		color: white;
-		position: absolute;
-		padding-top: 7px;
-		font-size: 15px;
-		margin-left: 43%;
-		margin-right: 5%;
-		margin-top: 9px;
-		z-index: 200;
-	}
+.button-container {
+	width: 6%;
+	float: left;
+	height: 80%;
+	margin-left: 3%;
+	margin-top: 1%;
+	position: static;
+	cursor: pointer;
+	color: white;
 }
+
+.button-container__button {
+	display: block;
+	width: 40px;
+	text-align: center;
+	font-size: 30px;
+}
+
+
+
+
+
 
 /*--------------------------------------------------------------
 2.2 Home Page
