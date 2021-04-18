@@ -19,23 +19,28 @@
 </head>
 
 <body>
-    <header>
-		<div class="title">Frontend Proyect</div>
-			<nav class="nav">
-			<ul class="nav__responsive-ul">
-				<div class="nav__responsive-button-container">
-					<div class="nav__responsive-button fas fa-bars"></div>
-				</div>
-				<div class="nav__li-container">
-					<li class="nav__responsive-li"><i class="fas fa-home"></i><a href="/./../index.html">Inicio</a></li>
-					<li class="nav__responsive-li"><i class="fas fa-calculator"></i><a href="/./pages/ejercicios.html">Operaciones</a></li>
-				</div>
-			</ul>
-		</nav>
-	</header>
 
+	<div class="nav-container" id="sidebar">
+		<ul class="nav-container__ul">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li class="nav-container__li"><i class="fas fa-home"></i><a href="/../index.html">Inicio</a></li>
+			<li class="nav-container__li"><i class="fas fa-calculator"></i><a href="/./pages/ejercicios.html">Operaciones</a></li>
+		</ul>
+	</div>
 
-    <main>
+    <div id="all">
+        <header>
+			<div class="button-container">
+				<div class="button-container__button fas fa-bars"></div>
+			</div>
+			<div class="title">
+				<h1>Frontend Proyect</h1>
+			</div>
+		</header>
+        <main>
         <div class="main-flex-container">
             <div class="flex-container">
                 <div class="title-1">Insertion sort</div>
@@ -134,8 +139,9 @@
             </div>
         </div>
     </footer>
-
-        <script type="module" src="/../javascript/scripts.js"></script>
+    </div>
+    <script type="module" src="/../javascript/scripts.js"></script>
+    <script src="/../javascript/Nav-bar.js"></script>
 
 </body>
 </html>
