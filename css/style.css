@@ -101,10 +101,16 @@ h3 {
 	font-family: "PT Serif", serif;
 	font-weight: 100;
 }
+body {
+	height: 100vh;
+	min-height: var(--mobile-h);
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+}
 /*--------------------------------------------------------------
 2.1 Header
 --------------------------------------------------------------*/
-
 .title {
 	font-family: "PT Serif", serif;
 	color: white;
@@ -143,7 +149,7 @@ h3 {
 	position: absolute;
 	width: 100%;
 	padding: auto;
-	margin-top: 55px;	
+	margin-top: 55px;
 	height: 0;
 }
 
@@ -220,10 +226,12 @@ h3 {
 /*--------------------------------------------------------------
 2.2 Home Page
 --------------------------------------------------------------*/
+/* main { */
+/* } */
+
 .reel {
 	width: 100%;
 	overflow: scroll;
-	background: #636470;
 	padding: 25px;
 	position: relative;
 }
@@ -231,7 +239,6 @@ h3 {
 .reel__cont {
 	white-space: nowrap;
 	margin: 50px 0px;
-	padding-bottom: 10px;
 }
 
 .reel-item {
@@ -252,7 +259,7 @@ h3 {
 
 .reel-item:hover ~ .reel-item {
 	-webkit-transform: translate3d(100px, 0, 0);
-	transform: translate3d(100px, 0, 0);
+	transform: translate3d(57px, 0, 0);
 }
 
 .reel__cont:hover .reel-item {
@@ -302,65 +309,69 @@ h3 {
 --------------------------------------------------------------*/
 
 footer {
+	/* margin-top: auto; */
 	width: auto;
-	height: 30vh;
-	display: flex;
-	justify-content: center;
+	height: 15vh;
+	min-height: 96px;
 	background-color: var(--black);
 }
 
 .footer-cont {
+	height: 15vh;
 	width: 80vw;
 	min-width: var(--mobile-w);
+	margin-left: auto;
+	margin-right: auto;
 	display: flex;
-	flex-direction: column;
 	justify-content: space-around;
-}
-.footer__u-logo-cont {
-	height: auto;
-	max-height: 20vh;
-	padding-top: 4vh;
-}
-.footer__u-logo {
-	display: block;
-	margin: auto;
-	max-height: 10vh;
-	/* width: 50%; */
+	align-items: center;
 }
 .footer__contact-cont {
 	width: 60%;
-	height: 12.5vh;
-	margin-left: auto;
-	margin-right: auto;
+	max-height: 10vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 }
 .footer__contact-tittle-cont {
-	text-align: center;
-	/* color: var(--yellow); */
+	height: 10rem;
 	color: white;
 	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .footer__contact-tittle-cont *:hover {
 	color: var(--celeste);
 }
 .footer__contact-icons-cont {
+	padding-left: 15px;
+	padding-right: 15px;
 	display: flex;
 	justify-content: space-around;
 	margin-bottom: 10px;
 }
 .svg-icon,
 #contact-icon {
-	height: 35px;
+	height: 1vh;
+	min-height: 30px;
 	color: var(--pink);
 }
-
+.footer__u-logo-cont {
+	height: auto;
+	max-height: 15vh;
+}
+.footer__u-logo {
+	margin: 0 auto;
+	height: 10vh;
+	min-height: 50px;
+	/* width: 50%; */
+}
 /*--------------------------------------------------------------
 3 ejercicios.html
 --------------------------------------------------------------*/
 
-.main-flex-container{
+.main-flex-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -368,6 +379,7 @@ footer {
 	align-items: flex-start;
 }
 
+<<<<<<< HEAD
 .flex-container{
 	background-color: steelblue;
 	padding: 30px;
@@ -376,3 +388,9 @@ footer {
 	flex-grow: 1;
 	text-align: center;
 }
+=======
+.flex-container {
+	padding: 10px;
+	margin: 10px;
+}
+>>>>>>> 256ace73bd18f0942f5e99418e52eb243e3277d3
