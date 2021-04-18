@@ -38,60 +38,60 @@
             <div class="flex-container">
                 <div class="title-1">Insertion sort</div>
                 <div class="title-2">Array of numbers</div>
-                <form class="form">
+                <form class="form" id="insertion-sort-form">
                     <div class="form__section">
-                        <input type="text" class="form__input">
+                        <input type="text" name="numbers" class="form__input" placeholder="comma separated">
                     </div>
                     <div class="form__section">
-                        <input type="submit" class="form__submit">
+                        <input type="submit" onclick="do_insertion_sort()" class="form__submit" value="comma separated numbers">
                     </div>
                     <div class="form__section">
-                        <input type="text" readonly="" class="form__result">
+                        <input type="text" name="insertion-sort__output" readonly="" class="form__result">
                     </div>
                 </form>
             </div>
             <div class="flex-container">
                 <div class="title-1">Factorial</div>
                 <div class="title-2">Number (between 1 and 6)</div>
-                <form class="form">
+                <form class="form" id="factorial-form">
                     <div class="form__section">
-                        <input type="text" class="form__input">
+                        <input type="text" name="number" class="form__input" placeholder="Number">
                     </div>
                     <div class="form__section">
-                        <input type="submit" class="form__submit">
+                        <input type="submit" class="form__submit" onclick="do_factorial()"  value="calculate Factorial">
                     </div>
                     <div class="form__section">
-                        <input type="text" readonly="" class="form__result">
+                        <input type="text" name="factorial__output" readonly="" class="form__result">
                     </div>
                 </form>
             </div>
             <div class="flex-container">
                 <div class="title-1">Fibonacci</div>
-                <div class="title-2">Array of numbers</div>
-                <form class="form">
+                <div class="title-2">Choose a Number</div>
+                <form class="form" id="fibonacci-form">
                     <div class="form__section">
-                        <input type="text" class="form__input">
+                        <input type="text" name="number" class="form__input" placeholder="Number">
                     </div>
                     <div class="form__section">
-                        <input type="submit" class="form__submit">
+                        <input type="submit" onclick="do_fibonacci()" class="form__submit" value="Calculate Fibonacci">
                     </div>
                     <div class="form__section">
-                        <input type="text" readonly="" class="form__result">
+                        <input type="text" name="fibonacci__output" readonly="" class="form__result">
                     </div>
                 </form>
             </div>
             <div class="flex-container">
                 <div class="title-1">Evaluation</div>
                 <div class="title-2">Write any mathematical expression</div>
-                <form class="form">
+                <form class="form" id="evaluation-form">
                     <div class="form__section">
-                        <input type="text" class="form__input">
+                        <input type="text" name="expression" class="form__input" placeholder="2 + 3 * 5 - 100">
                     </div>
                     <div class="form__section">
-                        <input type="submit" class="form__submit">
+                        <input type="submit" onclick="do_evaluation()" class="form__submit" value="Evaluate Expression">
                     </div>
                     <div class="form__section">
-                        <input type="text" readonly="" class="form__result">
+                        <input type="text" name="evaluation__output" readonly="" class="form__result">
                     </div>
                 </form>
             </div>
@@ -117,6 +117,8 @@
 			</div>
 		</div>
 	</footer>
+
+<script src="/./javascript/scripts.js"></script>
 
 </body>
 </html>
