@@ -379,7 +379,6 @@ footer {
 	align-items: flex-start;
 }
 
-<<<<<<< HEAD
 .flex-container{
 	background-color: steelblue;
 	padding: 30px;
@@ -388,9 +387,3 @@ footer {
 	flex-grow: 1;
 	text-align: center;
 }
-=======
-.flex-container {
-	padding: 10px;
-	margin: 10px;
-}
->>>>>>> 256ace73bd18f0942f5e99418e52eb243e3277d3
