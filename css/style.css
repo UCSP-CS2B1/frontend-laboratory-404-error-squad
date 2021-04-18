@@ -112,7 +112,7 @@ body {
 2.1 Header
 --------------------------------------------------------------*/
 .title {
-	font-family: "PT Serif", serif;
+	font-family: 'Patrick Hand', cursive;
 	color: white;
 	position: absolute;
 	font-size: 20px;
@@ -140,6 +140,7 @@ body {
 }
 
 .nav {
+	font-family: 'Patrick Hand', cursive;
 	height: 50px;
 	width: 100%;
 }
@@ -325,6 +326,9 @@ body {
 /*--------------------------------------------------------------
 2.3 Footer
 --------------------------------------------------------------*/
+h3{
+	font-family: 'Patrick Hand', cursive;
+}
 
 footer {
 	/* margin-top: auto; */
@@ -361,11 +365,11 @@ footer {
 	justify-content: center;
 }
 .footer__contact-tittle-cont *:hover {
-	color: var(--pink-mate);
+	color: #bbb;
 }
 .footer__contact-icons-cont {
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 2px;
+	padding-right: 2px;
 	display: flex;
 	justify-content: space-around;
 	margin-bottom: 10px;
@@ -373,8 +377,8 @@ footer {
 .svg-icon,
 #contact-icon {
 	height: 1vh;
-	min-height: 30px;
-	color: var(--pink-mate);
+	min-height: 40px;
+	color: #bbb;
 }
 .footer__u-logo-cont {
 	height: auto;
@@ -461,6 +465,7 @@ main {
 	border: none;
 	border-radius:1em;
 	border: 3px solid var(--black);
+	outline: none;
 }
 
 @media screen and (max-width: 800px) {
