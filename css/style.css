@@ -134,7 +134,7 @@ h3 {
 }
 
 .nav {
-	height: 60px;
+	height: 50px;
 	width: 100%;
 }
 
@@ -362,4 +362,9 @@ footer {
 
 .main-flex-container{
 	display: flex;
+}
+
+.flex-container{
+	padding: 10px;
+	margin: 10px;
 }
