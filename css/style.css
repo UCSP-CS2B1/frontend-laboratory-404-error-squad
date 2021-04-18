@@ -198,6 +198,25 @@ body {
 	font-size: 30px;
 }
 
+@media screen and (max-width: 900px) {
+	.nav-container__li {
+		list-style: none;
+		font-family: 'Patrick Hand', cursive;
+		  padding: 20px 10px;
+		  text-align: center;
+		  font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.nav-container__li {
+		list-style: none;
+		font-family: 'Patrick Hand', cursive;
+		  padding: 20px 10px;
+		  text-align: center;
+		  font-size: 7px;
+	}
+}
 /*--------------------------------------------------------------
 2.2 Home Page
 --------------------------------------------------------------*/
@@ -212,8 +231,7 @@ body {
 	padding-top: 80px;
 	margin: 0;
 	white-space: nowrap;
-	padding: 50px 0px;
-	
+	padding: 50px 0px;	
 	margin-top: 0;
 }
 
