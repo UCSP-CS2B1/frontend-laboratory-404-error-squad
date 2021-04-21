@@ -1,19 +1,20 @@
 ## Laboratory Activity
 
-**Grade** -
+**Grade**: 15
 
-- (5pts) Layout
-- (5pts) CSS 
-- (5pts) Javascript methods
-- (5pts) Responsiveness
+- (5/5pts) Layout
+- (4/5pts) CSS 
+- (2/5pts) Javascript methods
+- (4/5pts) Responsiveness
+
+Project isn't properly rendered locally or remotely (https://ucsp-cs2b1.github.io/frontend-laboratory-404-error-squad/)
 
 **Members:**
 
-- Name and surname (Student ID)
-- Name and surname (Student ID)
-- Name and surname (Student ID)
-- Name and surname (Student ID)
-- Name and surname (Student ID)
+- José Enrique Vilca Campana, (201-10-48429)
+- Geraldo Mark Romero Guillen, (201-10-48119)
+- Gabriel Santiago Choque Mayta, (201-10-47523)
+- Jean Carlo Gino Condori Gonzales, (201-10-47536)
 
 ---
 

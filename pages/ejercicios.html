@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="robots" content="index,follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Frontend Proyect</title>
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" media="(min-width: 720px)" href="../css/tablet.css">
+	<link rel="stylesheet" media="(min-width: 1024px)" href="../css/desktop.css">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eaadc99044.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Satisfy&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- <script type="javascript" src="./scripts.js"></script> -->
+</head>
+
+<body>
+
+	<div class="nav-container" id="sidebar">
+		<ul class="nav-container__ul">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li class="nav-container__li"><i class="fas fa-home"></i><a href="../index.html">Inicio</a></li>
+			<li class="nav-container__li"><i class="fas fa-calculator"></i><a href="../pages/ejercicios.html">Operaciones</a></li>
+		</ul>
+	</div>
+
+    <div id="all">
+        <header>
+			<div class="button-container">
+				<div class="button-container__button fas fa-bars"></div>
+			</div>
+			<div class="title">
+				<h1>Frontend Proyect</h1>
+			</div>
+		</header>
+        <main>
+        <div class="main-flex-container">
+            <div class="flex-container">
+                <div class="title-1">Insertion sort</div>
+                <div class="title-2">Array of numbers</div>
+                <form class="form" id="insertion-sort-form">
+                    <div class="form__section">    
+                        <input type="text" name="numbers" class="form__input" id="insertion-sort-input" placeholder="comma separated" id="insertion-sort-input">
+                    </div>
+                    <div class="form__section">
+                                            <!-- <input type="submit" name="insertion_submit" class="form__submit" value="comma separated numbers" form="insertion-sort-form"> -->
+                        <button class="form__submit" id="btn-insertion-sort">Submit</button>
+                    </div>
+                    <div class="form__section">
+                            <div class="form__result" id="insertion-sort-output"></div>
+                                            <!-- <label id="insertion-sort-output">
+                        <input type="text" name="insertion__output" readonly="" class="form__result">
+                                            </label> -->
+                    </div>
+                </form>
+            </div>
+            <div class="flex-container">
+                <div class="title-1">Factorial</div>
+                <div class="title-2">Number (between 1 and 6)</div>
+                <form class="form" id="factorial-form">
+                    <div class="form__section">
+                        <input id="factorial-input"type="number" name="number_0" class="form__input" placeholder="Number">
+                    </div>
+                    <div class="form__section">
+                        <!-- <input type="button" class="form__submit" onclick="do_factorial()" value="calculate Factorial"> -->
+                        <button class="form__submit"id="btn-factorial">Submit</button>
+                    </div>
+                    <div class="form__section">
+                        <div class="form__result" id="factorial-output"></div>
+                    </div>                                        
+                    <!-- <div class="form__section">
+                        <input type="text" name="factorial__output" readonly="" class="form__result">
+                    </div> -->
+                </form>
+            </div>
+            <div class="flex-container">
+                <div class="title-1">Fibonacci</div>
+                <div class="title-2">Choose a Number</div>
+                <form class="form" id="fibonacci-form">
+                    <div class="form__section">
+                        <input id="fibonacci-input"type="number" name="number_1" class="form__input" placeholder="Number">
+                    </div>
+                    <div class="form__section">
+                        <!-- <input type="submit" onclick="do_fibonacci()" class="form__submit" value="Calculate Fibonacci"> -->
+                        <button class="form__submit"id="btn-fibonacci">Submit</button>
+                    </div>
+                    <div class="form__section">
+                        <div class="form__result" id="fibonacci-output"></div>
+                    </div>                                        
+                    <!-- <div class="form__section">
+                        <input type="text" name="fibonacci__output" readonly="" class="form__result">
+                    </div> -->
+                </form>
+            </div>
+            <div class="flex-container">
+                <div class="title-1">Evaluation</div>
+                <div class="title-2">Write any mathematical expression</div>
+                <form class="form" id="evaluation-form">
+                    <div class="form__section">
+                        <input type="text" id="expression-input" name="expression" class="form__input" placeholder="2 + 3 * 5 - 100">
+                    </div>
+                    <div class="form__section">
+                        <!-- <input type="submit" class="form__submit" value="Evaluate Expression"> -->
+                        <button class="form__submit"id="btn-expression">Submit</button>
+                    </div>
+                    <div class="form__section">
+                        <div class="form__result" id="expression-output"></div>
+                    </div>                                         
+                    <!-- <div class="form__section">
+                        <input type="text" name="evaluation__output" readonly="" class="form__result">
+                    </div> -->
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-cont">
+            <div class="footer__contact-cont">
+                <div class="footer__contact-tittle-cont">
+                    <h3>Made by UCSP students</h3>
+                </div>
+                <div class="footer__contact-icons-cont">
+                    <img class="svg-icon" id="contact-icon" src="../css/images/github.svg"></img>
+                    <img class="svg-icon" id="contact-icon" src="../css/images/facebook.svg"></img>
+                    <img class="svg-icon" id="contact-icon" src="../css/images/twitter.svg"></img>
+                    <img class="svg-icon" id="contact-icon" src="../css/images/instagram.svg"></img>
+                </div>
+            </div>
+            <div class="footer__u-logo-cont">
+                <img class="footer__u-logo" src="../css/images/ucsp-white.png" alt="escudo de la universidad San Pablo">
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="../javascript/scripts.js"></script>
+    <script src="../javascript/Nav-bar.js"></script>
+
+</body>
+</html>
