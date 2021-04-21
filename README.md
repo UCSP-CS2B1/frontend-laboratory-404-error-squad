@@ -1,11 +1,11 @@
 ## Laboratory Activity
 
-**Grade**: 05
+**Grade**: 15
 
-- (2/5pts) Layout
-- (2/5pts) CSS 
-- (0/5pts) Javascript methods
-- (1/5pts) Responsiveness
+- (5/5pts) Layout
+- (4/5pts) CSS 
+- (2/5pts) Javascript methods
+- (4/5pts) Responsiveness
 
 Project isn't properly rendered locally or remotely (https://ucsp-cs2b1.github.io/frontend-laboratory-404-error-squad/)
 
